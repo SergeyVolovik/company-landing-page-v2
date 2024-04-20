@@ -1,0 +1,156 @@
+/* portfolio 
+===================*/
+.intro {
+    margin-bottom: 129px;
+}
+
+.heading-modification {
+    margin-bottom: 13px;
+}
+
+.portfolio__page {
+    margin-bottom: 40px;
+}
+
+.portfolio__text {
+    width: 100%;
+    max-width: 500px;
+}
+
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls ul {
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+.filter-slider {
+    width: 100%;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.filter-slider {
+    margin: 0 !important;
+}
+
+.filter {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #A9A9A9;
+    white-space: nowrap;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.filter:hover {
+    color: #666666;
+    cursor: pointer;
+}
+
+.active {
+    color: #666666;
+    font-weight: 600;
+}
+
+.container__projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.project {
+    width: 31.33333% !important;
+    margin: 15px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+}
+
+.project:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.container_pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.simple-pagination ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.simple-pagination li {
+    display: inline-block;
+    margin-right: 5px;
+    background: none;
+    text-align: center !important;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+    color: #C7C7C7;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    background: none !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.pages {
+    display: inline;
+}
+
+.simple-pagination .current {
+    color: #666666 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background: none !important;
+    border: none;
+    box-shadow: none !important;
+    position: relative;
+    bottom: 1px;
+}
+
+.simple-pagination .next.current {
+    display: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.simple-pagination .prev.current {
+    display: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}

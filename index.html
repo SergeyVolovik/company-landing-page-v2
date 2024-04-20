@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/planets.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:400,600&display=swap">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/modal_section_style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media_home_style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="planet yellow_planet_load"></div>
+            <div class="planet green_planet_load"></div>
+            <div class="planet red_planet_load"></div>
+        </div>
+    </div><!-- /preloader -->
+
+    <!-- cookies -->
+    <div id="cookie__consent">
+        <div class="cookie__container">
+            <img src="img/home__page/moon.svg" alt="Moon">
+            <p> We use cookies to provide you with a better experience using our website. Check out our <br> <a
+                    href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                to learn
+                more about what we collect and use. </p>
+            <a id="cookie__confirm" class="cookie__confirm">Confirm</a>
+        </div>
+    </div><!-- /cookies -->
+
+    <!-- social-icons -->
+    <div id="social__icons"></div><!-- /social-icons -->
+
+    <!-- modal section -->
+    <div id="bg__modal" class="bg__modal">
+        <div class="modal__content">
+            <img id="close__x" src="img/close_X_white.svg" alt="Close X">
+            <div class="contact__form">
+                <div class="planets__image">
+                    <img src="img/home__page/contact us/contact_us-planets.svg" alt="Planets System">
+                </div>
+                <div class="form">
+                    <h2>Are you ready to take the first step?</h2>
+                    <form id="form1" method="POST" action="">
+                        <input type="text" placeholder="Name" maxlength="200" required><br>
+                        <input type="text" placeholder="Company" maxlength="200" required><br>
+                        <input type="email" placeholder="Email" maxlength="1000" required><br>
+                        <div class="input__img">
+                            <input class="mb-pdr-modification" type="text" placeholder="Message (optional)">
+                            <input id="file" type="file"
+                                accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+                            <span id="clip" class="clip" data-tooltip=".xlsx, .xls, image/*, .doc, .docx, .ppt, .pptx, .txt, .pdf, .zip, .rar"></span><br>
+                        </div>
+                        <div class="block__check">
+                            <input type="checkbox" class="checkmark" required>
+                            <span>I accept your <a href="privacy_policy.html" target="_blank">Privacy
+                                    Policy</a><br></span>
+                        </div>
+                        <input id="send__data" type="submit" name="submit" value="Let's Talk">
+                    </form>
+                    <div id="answer__section" class="answer__section">
+                        <div class="answer__inner">
+                            <h2>Awesome</h2>
+                            <p>We will reach you on email during the day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /modal section -->
+
+    <!-- header -->
+    <header class="main-header-modification">
+        <div class="container__inner">
+            <div class="header__inner">
+
+                <div class="header__logo">
+                    <span class='logo__text'>Gargoyle Agency</span>
+                </div>
+
+                <nav id="js__nav" class="nav">
+
+                    <div class="container__links">
+                        <a class="nav__link active__link" href="index.html">Home</a>
+                        <a class="nav__link" href="portfolio.html">Portfolio</a>
+                        <a class="nav__link" href="404.html">Blog</a>
+                        <a id="link__contact" class="nav__link nav-last-modification" href="#">Contact Us</a>
+                    </div>
+
+                    <div id="nav__footer">
+                        <div class="social social--footer social-modification">
+
+                            <a class="social__item" href="https://www.facebook.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://twitter.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://www.instagram.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://www.linkedin.com/company/gargoyle-agency/about/"
+                                target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <div class="copyright__text copyright-modification">
+                            ©2020 Gargoyle Agency. All rights reserved.
+                        </div>
+
+                    </div>
+
+                </nav><!-- /navigation -->
+
+                <button id="nav__toggle" class="burger burger-mod" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header><!-- /header -->
+
+    <!-- header-text -->
+    <div id="js__intro" class="intro">
+        <div class="container__inner">
+            <div class="intro__inner">
+                <div class="intro__text">
+                    <h1 class="heading-modification">Discover new brave world</h1>
+                    <h2>Upgrade your company to the next stage and unleash the creative and innovative potential of your
+                        team by connecting artificial intelligence to your business and daily life.</h2>
+                </div>
+                <div class="intro__planets">
+                    <div class="container_big_planet">
+                        <div class="green__planet"></div>
+                        <div class="container_mediaum_planet">
+                            <div class="red__planet"></div>
+                            <div class="container_small_planet">
+                                <div class="yellow_planet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="btn" class="btn" href="#contact_us">contact us<span class="arrow"></span></a>
+            </div>
+        </div>
+    </div><!-- /header-text -->
+
+    <!-- overviev -->
+    <div class="overview">
+        <div class="container__inner">
+            <div class="overview__inner">
+                <div class="overview__text">
+                    <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Overview</h1>
+                    <p class="wow fadeInUp" data-wow-duration="1.2s">Gargoyle Agency is a software development company
+                        with a research and development center located
+                        in
+                        Ukraine. From the
+                        beginning the company has been attracting leading specialists in the field of web design, web
+                        applications and artificial
+                        intelligence to provide innovative industry solutions to small and medium businesses around the
+                        globe.</p>
+                </div>
+                <div class="overview__statistic">
+
+                    <div class="item__statistic">
+                        <span class="counter" data-counter-time="1000" data-counter-delay="10">2</span>
+                        <p>Year</p>
+                    </div>
+
+                    <div class="item__statistic">
+                        <span class="counter" data-counter-time="1000" data-counter-delay="10">31</span>
+                        <p>Countries</p>
+                    </div>
+
+                    <div class="item__statistic">
+                        <span class="counter" data-counter-time="1000" data-counter-delay="10">17</span>
+                        <p>Industries</p>
+                    </div>
+
+                    <div class="item__statistic">
+                        <span class="counter" data-counter-time="1000" data-counter-delay="10">73</span>
+                        <p>Projects</p>
+                    </div>
+
+                </div>
+                <div class="map__img">
+                    <div class="markers"></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /overview -->
+
+    <!-- services -->
+    <div class="services">
+        <div class="container__slider">
+            <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Services</h1>
+            <div class="container__services">
+
+                <div class="services__item wow fadeInLeft" data-wow-duration="1.2s">
+                    <img src="img/home__page/services/design.png" alt="Design">
+                    <div class="text__item">
+                        <h2>Web Design</h2>
+                        <p>Refresh your vision of the company and develop a unique brand of identity with the
+                            help of advanced methodologies for creating a user interface and user experience.
+                        </p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+                <div class="services__item wow fadeInLeft" data-wow-duration="1.2s">
+                    <img src="img/home__page/services/develop.png" alt="Developming">
+                    <div class="text__item text-modification">
+                        <h2>Web Development</h2>
+                        <p>Upgrade your solutions by introducing modern frameworks for working in the web space
+                            to
+                            improve the quality and speed of the company.</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+                <div class="services__item wow fadeInLeft" data-wow-duration="1.2s">
+                    <img src="img/home__page/services/robots.png" alt="Robots">
+                    <div class="text__item">
+                        <h2>Artificial Intelligence</h2>
+                        <p>Invent a completely new approach when working with a client using innovative
+                            technological solutions based on data analysis, machine learning and computer
+                            vision.
+                        </p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- /services -->
+
+    <!-- industries -->
+    <div class="industries">
+        <div class="container__slider">
+            <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Industries</h1>
+            <div class="container__industries">
+
+                <div class="industries__item wow fadeInRight" data-wow-duration="1.2s">
+                    <img src="img/home__page/industries/clothes.png" alt="Clothes">
+                    <div class="text__item text-modification">
+                        <h2>Retail</h2>
+                        <p>Upgrade your customer service standard by introducing artificial intelligence to
+                            explore
+                            customer preferences, build behavioral patterns, and increase brand loyalty.</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+
+                <div class="industries__item wow fadeInRight" data-wow-duration="1.2s">
+                    <img src="img/home__page/industries/research.png" alt="Research">
+                    <div class="text__item">
+                        <h2>Medicine</h2>
+                        <p>Improve medical practices for working with patients by introducing artificial
+                            intelligence to conduct complete health analytics, identify potential diseases and
+                            prepare comprehensive treatment.</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+                <div class="industries__item wow fadeInRight" data-wow-duration="1.2s">
+                    <img src="img/home__page/industries/camera.png" alt="Camera">
+                    <div class="text__item text-modification">
+                        <h2>Security</h2>
+                        <p>Increase your company security level by introducing artificial intelligence to detect
+                            financial fraud, identify intentional theft and reveal people dangerous to society.
+                        </p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Learn More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn btn-modification btn-tablet" href="">View More</a>
+        </div>
+    </div><!-- /industries -->
+
+
+    <!-- portfolio -->
+    <div class="portfolio">
+        <div class="container__slider">
+            <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Portfolio</h1>
+            <div class="container__portfolio wow fadeInUp" data-wow-duration="1.2s">
+
+                <div class="portfolio__item">
+                    <img src="img/home__page/portfolio/Big Rikvin Know Your Customer.png" alt="">
+                    <div class="text__item text-modification">
+                        <h2>Rikvin Customers</h2>
+                        <p>The banking system based on an artificial intelligence designed to prevent money
+                            laundering, financial terrorism and tax evasion by private individuals.</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__item">
+                    <img src="img/home__page/portfolio/mojo.png" alt="">
+                    <div class="text__item text-modification">
+                        <h2>Mojo Diagnostics</h2>
+                        <p>A platform based on artificial intelligence that processes videos with the seminal
+                            fluid
+                            to determine sperms activity and classifies genetic abnormalities for each sperm.
+                        </p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <img src="img/home__page/portfolio/heatroute.png" alt="">
+                    <div class="text__item text-modification">
+                        <h2>Heat Route</h2>
+                        <p>A system based on artificial intelligence that determines the age, gender of visitors
+                            and
+                            tracked their movements to create analytical reports among different target
+                            audiences.
+                        </p>
+                    </div>
+                    <div class="block__link">
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn btn-modification btn-tablet" href="portfolio.html">View More</a>
+        </div>
+    </div><!-- /portfolio -->
+
+    <!-- blog -->
+    <div class="blog">
+        <div class="container__slider">
+            <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Blog</h1>
+            <div class="container__blog wow fadeInUp" data-wow-duration="1.2s">
+
+                <div class="blog__item">
+                    <div class="overflow__block">Business</div>
+                    <img src="img/home__page/blog/Big Unimedica.png" alt="">
+                    <div class="text__item text-blog-modification">
+                        <h2>Article title</h2>
+                        <p>An advertising platform based on artificial
+                            intelligence that turns images into interactive
+                            ads. An advertising platform based on artificial
+                            ntelligence that turns images into interactive ads.</p>
+                    </div>
+                    <div class="block__link modification-padding">
+                        <span class="post__date">Aug 20, 2019</span>
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+
+                <div class="blog__item">
+                    <div class="overflow__block">Business</div>
+                    <img src="img/home__page/blog/Big Unimedica.png" alt="">
+                    <div class="text__item text-blog-modification">
+                        <h2>Article title</h2>
+                        <p>An advertising platform based on artificial
+                            intelligence that turns images into interactive
+                            ads. An advertising platform based on artificial
+                            ntelligence that turns images into interactive ads.</p>
+                    </div>
+                    <div class="block__link modification-padding">
+                        <span class="post__date">Aug 20, 2019</span>
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+                <div class="blog__item">
+                    <div class="overflow__block">Business</div>
+                    <img src="img/home__page/blog/Big Unimedica.png" alt="">
+                    <div class="text__item text-blog-modification">
+                        <h2>Article title</h2>
+                        <p>An advertising platform based on artificial
+                            intelligence that turns images into interactive
+                            ads. An advertising platform based on artificial
+                            ntelligence that turns images into interactive ads.</p>
+                    </div>
+                    <div class="block__link modification-padding">
+                        <span class="post__date">Aug 20, 2019</span>
+                        <a href="">Read More <span class="arrow arrow-mod"></span></a>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn btn-modification btn-tablet" href="">View More</a>
+        </div>
+    </div><!-- /blog -->
+
+    <!-- testimonials -->
+    <div class="testimonials">
+        <div class="container__inner lg-device">
+            <div class="testimonials__inner">
+                <h1 class="heading-modification">Testimonials</h1>
+                <div id="reviews__slider" class="reviews__slider">
+
+                    <div>
+                        <div class="container__video">
+                            <button class="playpause"></button>
+                            <video class="video" controls="controls" preload="metadata" controlsList="nodownload"
+                                poster="img/home__page/testimonials/poster/Thomas Spycher Review for Gargoyle Agency.jpeg">
+                                <source src="video/Thomas Spycher Review for Gargoyle Agency.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="container__video">
+                            <button class="playpause"></button>
+                            <video class="video" controls="controls" preload="metadata" controlsList="nodownload"
+                                poster="img/home__page/testimonials/poster/Charlotte Bax Review for Gargoyle Agency.jpeg">
+                                <source src="video/Charlotte Bax Review for Gargoyle Agency.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="container__video">
+                            <button class="playpause"></button>
+                            <video class="video" controls="controls" preload="metadata" controlsList="nodownload"
+                                poster="img/home__page/testimonials/poster/Pablo Gonzalez Review for Gargoyle Agency.jpeg">
+                                <source src="video/Pablo Gonzalez Review for Gargoyle Agency.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /testimonials -->
+
+    <!-- contact us -->
+    <div id="contact_us" class="contact">
+        <div class="container__inner">
+            <div class="contact__inner">
+                <h1 class="heading-modification wow fadeInUp" data-wow-duration="1.2s">Contact Us</h1>
+                <div class="contact__form wow fadeInUp" data-wow-duration="1.2s">
+                    <div class="planets__image">
+                        <img src="img/home__page/contact us/contact_us-planets.svg" alt="Planets">
+                    </div>
+                    <div class="form">
+                        <h2>Are you ready to take the first step?</h2>
+                        <form id="form2" method="POST" action="">
+                            <input type="text" placeholder="Name" maxlength="200" required><br>
+                            <input type="text" placeholder="Company" maxlength="200" required><br>
+                            <input type="email" placeholder="Email" maxlength="1000" required><br>
+                            <div class="input__img">
+                                <input class="mb-pdr-modification" type="text" placeholder="Message (optional)">
+                                <input id="file__home" type="file"
+                                    accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+                                <span id="clip__home" class="clip__home" data-tooltip=".xlsx, .xls, image/*, .doc, .docx, .ppt, .pptx, .txt, .pdf, .zip, .rar"></span><br>
+                            </div>
+                            <div class="block__check">
+                                <input type="checkbox" class="checkmark" required>
+                                <span>I accept your <a href="privacy_policy.html" target="_blank">Privacy
+                                        Policy</a><br></span>
+                            </div>
+                            <input type="submit" name="submit" value="Let's Talk">
+                        </form>
+                    </div>
+                    <div id="answer__section" class="answer__section">
+                        <div class="answer__inner">
+                            <h2>Awesome</h2>
+                            <p>We will reach you on email during the day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /contact us -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <div class="social social--footer">
+
+                        <a class="social__item" href="https://www.facebook.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://twitter.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://www.instagram.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://www.linkedin.com/company/gargoyle-agency/about/"
+                            target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div><!-- /social -->
+                    <div class="copyright__text">
+                        ©2020 Gargoyle Agency. All rights reserved.
+                    </div>
+                </div>
+            </div><!-- /footer__inner -->
+        </div>
+    </footer><!-- /footer -->
+
+    <!-- script -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countup.min.js"></script>
+    <!-- wow script -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        $('.counter').countUp();
+    </script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+
+</body>
+
+</html>

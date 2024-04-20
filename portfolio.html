@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/planets.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media_home_style.css">
+    <link rel="stylesheet" href="css/media_portfolio.css">
+    <link rel="stylesheet" href="css/simplePagination.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="planet yellow_planet_load"></div>
+            <div class="planet green_planet_load"></div>
+            <div class="planet red_planet_load"></div>
+        </div>
+    </div><!-- /preloader -->
+
+    <!-- cookies -->
+    <div id="cookie__consent">
+        <div class="cookie__container">
+            <img src="img/home__page/moon.svg" alt="Moon">
+            <p> We use cookies to provide you with a better experience using our website. Check out our <br> <a
+                    href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                to learn
+                more about what we collect and use. </p>
+            <a id="cookie__confirm" class="cookie__confirm">Confirm</a>
+        </div>
+    </div><!-- /cookies -->
+
+    <!-- social-icons -->
+    <div id="social__icons"></div>
+    <!-- social-icons -->
+
+    <!-- modal section -->
+    <div id="bg__modal" class="bg__modal">
+        <div class="modal__content">
+            <img id="close__x" src="img/close_X_white.svg" alt="Close X">
+            <div class="contact__form">
+                <div class="planets__image">
+                    <img src="img/home__page/contact us/contact_us-planets.svg" alt="Planets System">
+                </div>
+                <div class="form">
+                    <h2>Are you ready to take the first step?</h2>
+                    <form id="form1" method="POST" action="">
+                        <input type="text" placeholder="Name" maxlength="200" required><br>
+                        <input type="text" placeholder="Company" maxlength="200" required><br>
+                        <input type="email" placeholder="Email" maxlength="1000" required><br>
+                        <div class="input__img">
+                            <input class="mb-pdr-modification" type="text" placeholder="Message (optional)">
+                            <input id="file" type="file"
+                                accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+                            <span id="clip" class="clip" data-tooltip=".xlsx, .xls, image/*, .doc, .docx, .ppt, .pptx, .txt, .pdf, .zip, .rar"></span><br>
+                        </div>
+                        <div class="block__check">
+                            <input type="checkbox" class="checkmark" required>
+                            <span>I accept your <a href="privacy_policy.html" target="_blank">Privacy
+                                    Policy</a><br></span>
+                        </div>
+                        <input id="send__data" type="submit" name="submit" value="Let's Talk">
+                    </form>
+                    <div id="answer__section" class="answer__section">
+                        <div class="answer__inner">
+                            <h2>Awesome</h2>
+                            <p>We will reach you on email during the day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /modal section -->
+
+    <!-- header -->
+    <header class="main-header-modification">
+        <div class="container__inner">
+            <div class="header__inner">
+
+                <div class="header__logo">
+                    <span class='logo__text'> <a href="index.html">Gargoyle Agency</a></span>
+                </div>
+
+                <nav id="js__nav" class="nav">
+
+                    <div class="container__links">
+                        <a class="nav__link" href="index.html">Home</a>
+                        <a class="nav__link active__link" href="portfolio.html">Portfolio</a>
+                        <a class="nav__link" href="404.html">Blog</a>
+                        <a id="link__contact" class="nav__link nav-last-modification" href="#">Contact Us</a>
+                    </div>
+
+                    <div id="nav__footer">
+                        <div class="social social--footer social-modification">
+
+                            <a class="social__item" href="https://www.facebook.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://twitter.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://www.instagram.com/gargoyleagency/" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a class="social__item" href="https://www.linkedin.com/company/gargoyle-agency/about/"
+                                target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <div class="copyright__text copyright-modification">
+                            ©2020 Gargoyle Agency. All rights reserved.
+                        </div>
+
+                    </div>
+
+                </nav><!-- /navigation -->
+
+                <button id="nav__toggle" class="burger burger-mod" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header><!-- /header -->
+
+    <!-- header-text -->
+    <div id="js__intro" class="intro">
+        <div class="container__inner">
+            <div class="intro__inner">
+                <div class="intro__text">
+                    <h1 class="heading-modification">the best proof is Experience</h1>
+                    <h2 class="portfolio__text">Learn more about the challenges we face every day in order
+                        to better understand how we think and work to bring your creative and innovative ideas to daily
+                        life.</h2>
+                </div>
+                <div class="intro__planets">
+                    <div class="container_big_planet">
+                        <div class="green__planet blue__planet"></div>
+                        <div class="container_mediaum_planet">
+                            <div class="red__planet darkred_planet"></div>
+                            <div class="container_small_planet">
+                                <div class="yellow_planet lightgreen_planet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="btn" class="btn" href="#contact_us">contact us<span class="arrow"></span></a>
+            </div>
+        </div>
+    </div><!-- /header-text -->
+
+    <!-- portfolio -->
+    <div id="portfolio__page" class="portfolio__page">
+        <div class="container__inner">
+            <div class="controls">
+                <ul>
+                    <div class="filter-slider wow fadeInUp" data-wow-duration="1.2s">
+
+                        <li class="filter active" data-filter="all">All</li>
+                        <li class="filter" data-filter=".agriculture">Agriculture</li>
+                        <li class="filter" data-filter=".architecture">Architecture</li>
+                        <li class="filter" data-filter=".education">Education</li>
+                        <li class="filter" data-filter=".finance">Finance</li>
+                        <li class="filter" data-filter=".law">Law</li>
+                        <li class="filter" data-filter=".marketing">Marketing</li>
+                        <li class="filter" data-filter=".medicine">Medicine</li>
+                        <li class="filter" data-filter=".real-estate">Real Estate</li>
+                        <li class="filter" data-filter=".recruitment">Recruitment</li>
+                        <li class="filter" data-filter=".retail">Retail</li>
+                        <li class="filter" data-filter=".security">Security</li>
+                        <li class="filter" data-filter=".shipping">Shipping</li>
+                        <li class="filter" data-filter=".travel">Travel</li>
+
+                    </div>
+                </ul>
+            </div>
+
+            <div class="container__projects wow fadeInUp" data-wow-duration="1.2s">
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="${results[i].img}" alt="Design">
+                    <div class="text__item project__text">
+                        <h2>${results[i].title}</h2>
+                        <p>${results[i].description}</p>
+                    </div>
+                    <div class="block__link">
+                        <a href="project.html" target="_blanck">Learn More <span class="arrow arrow-mod">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30.707" height="8.359" viewBox="0 0 30.707 8.359">
+                        <g data-name="Group 1009" transform="translate(14630.5 -1306.05)">
+                            <line id="Line_79" data-name="Line 79" x2="28.882" transform="translate(-14630.5 1310.267)" stroke-width="1"/>
+                            <path id="Path_802" data-name="Path 802" d="M-14595.613,1298.32l7.66,3.73-7.66,3.73" transform="translate(-12.982 8.18)" stroke-width="1"/>
+                        </g>
+                    </svg></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container_pagination">
+                <div id="pagination-container"></div>
+            </div>
+        </div>
+    </div> <!-- /portfolio -->
+
+    <!-- footer -->
+    <footer id=" footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <div class="social social--footer">
+
+                        <a class="social__item" href="https://www.facebook.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://twitter.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://www.instagram.com/gargoyleagency/" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="https://www.linkedin.com/company/gargoyle-agency/about/"
+                            target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+                    </div><!-- /social -->
+
+                    <div class="copyright__text">
+                        ©2020 Gargoyle Agency. All rights reserved.
+                    </div>
+
+                </div>
+            </div><!-- /footer__inner -->
+        </div>
+    </footer><!-- /footer -->
+
+    <!-- script -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/filter_pagination.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <!-- wow script -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script type="text/javascript" src="js/animation.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .header__logo {
+        position: relative;
+    }
+
+    .container {
+        max-width: 1600px;
+    }
+
+    .intro__container h1 {
+        font-size: 6em;
+    }
+
+    .text__intro {
+        font-size: 1.4em;
+        max-width: 958px;
+        line-height: 1.4em;
+    }
+
+    .btn {
+        max-width: 250px;
+        font-size: 1em;
+    }
+
+    /* Privecy Policy */
+    .mod-mw {
+        max-width: 851px;
+    }
+
+}
+
+@media (min-width: 1536px) and (max-width: 1919px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .intro__container h1 {
+        font-size: 5.3em;
+    }
+
+    .text__intro {
+        font-size: 1.2em;
+        max-width: 820px;
+        line-height: 1.4em;
+    }
+
+    .btn {
+        max-width: 250px;
+        font-size: 1em;
+    }
+
+    /* Privecy Policy */
+    .mod-mw {
+        max-width: 746px;
+    }
+}
+
+@media screen and (max-width: 1184px) {
+    .intro__container h1 {
+        font-size: 3.8em;
+    }
+
+    /* Privecy Policy */
+    .mod-mw {
+        max-width: 561px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header__logo {
+        position: relative;
+        left: 2%;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .intro__container h1 {
+        font-size: 3.2em;
+    }
+
+    /* Privecy Policy */
+    .mod-mw {
+        max-width: 536px;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .intro__container h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__logo {
+        position: relative;
+        left: 1%;
+    }
+
+    .intro__container h1 {
+        font-size: 2.56em;
+    }
+
+    .text__intro {
+        max-width: 526px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 14px 20px;
+    }
+
+    [data-tooltip]:before {
+        margin-left: -140px;
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .intro__container h1 {
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .form h2 {
+        margin-bottom: 15px;
+    }
+
+    .form input[type='text'],
+    input[type='email'] {
+        margin-bottom: 15px;
+    }
+
+    .mb-pdr-modification {
+        margin-bottom: 30px !important;
+    }
+
+    .form input[type='submit'] {
+        margin-top: 24px;
+    }
+
+    .container {
+        max-width: 360px;
+    }
+
+    .header__inner {
+        padding: 20px 0 0 0;
+    }
+
+    .intro__container h1 {
+        display: flex;
+        font-size: 2.2em;
+        flex-direction: column;
+    }
+
+    .text-mob {
+        font-size: .4em;
+    }
+
+    .text__intro {
+        font-size: 14px;
+    }
+
+    .planets {
+        max-width: 244px;
+    }
+
+    #azure_planet {
+        width: 12px;
+        height: 12px;
+        background-size: 100% 100%;
+    }
+
+    #yellow_planet {
+        width: 21px;
+        height: 21px;
+        background-size: 100% 100%;
+    }
+
+    #red_planet {
+        width: 26px;
+        height: 26px;
+        background-size: 100% 100%;
+    }
+
+    #green_planet {
+        width: 42px;
+        height: 42px;
+        background-size: 100% 100%;
+    }
+
+    #orange_planet {
+        width: 26px;
+        height: 26px;
+        background-size: 100% 100%;
+    }
+
+    #blue_planet {
+        width: 22px;
+        height: 22px;
+        background-size: 100% 100%;
+    }
+
+    #pink_planet {
+        width: 12px;
+        height: 12px;
+        background-size: 100% 100%;
+    }
+
+    /* Privecy Policy */
+    .mod-header {
+        font-size: 2em !important;
+    }
+
+    .rule_container h2 {
+        font-size: 2em;
+    }
+
+    .rule__text {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        max-width: 310px;
+        padding: 0;
+    }
+
+    .container__text {
+        margin-bottom: 16px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .intro__container h1 {
+        font-size: 2em;
+    }
+
+    .text__intro {
+        font-size: .8em;
+    }
+
+    .container__img {
+        margin-bottom: 20px;
+    }
+}

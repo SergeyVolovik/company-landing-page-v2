@@ -1,0 +1,40 @@
+@media screen and (max-width: 991px) {
+    .intro {
+        margin-bottom: 200px;
+    }
+
+    .controls {
+        overflow: hidden;
+    }
+
+    .project {
+        width: 48% !important;
+    }
+
+    .text__item {
+        padding: 20.5px 16px 0 16px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .intro {
+        margin-bottom: 150px;
+    }
+
+    .project {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .intro__text h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro__text h1 {
+        font-size: 36px;
+    }
+}

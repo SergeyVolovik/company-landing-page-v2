@@ -1,0 +1,419 @@
+/* home_page planets
+=================== */
+.container_big_planet {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 100px;
+    right: -350px;
+    border: 2px dashed #A9A9A9;
+    border-radius: 50%;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+}
+
+.green__planet {
+    width: 101px;
+    height: 101px;
+    margin: auto;
+    background: url(../img/home__page/header/green_planet.png) center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: circle_big 12s linear infinite, pulse_green 1s linear infinite;
+}
+
+.container_mediaum_planet {
+    width: 480px;
+    height: 480px;
+    margin: 14.5%;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px dashed #A9A9A9;
+    border-radius: 50%;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(0deg);
+}
+
+.red__planet {
+    width: 93px;
+    height: 93px;
+    margin: auto;
+    background: url(../img/home__page/header/red_planet.png) center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: circle_medium 10s linear infinite, pulse_red 1s linear infinite;
+}
+
+.container_small_planet {
+    width: 260px;
+    height: 260px;
+    margin: 22.5%;
+    padding: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px dashed #A9A9A9;
+    border-radius: 50%;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(0deg);
+}
+
+.yellow_planet {
+    width: 74px;
+    height: 74px;
+    background: url(../img/home__page/header/orange_planet.png) center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: circle_small 11s linear infinite, yellow_planet 1s linear infinite;
+}
+
+.blue__planet {
+    width: 106px;
+    height: 106px;
+    background: url(../img/projects/blue_planet.png) center no-repeat;
+    animation: circle_big 12s linear infinite, pulse__blue 1s linear infinite;
+}
+
+.darkred_planet {
+    width: 76px;
+    height: 76px;
+    background: url(../img/projects/darkred_planet.png) center no-repeat;
+    animation: circle_medium 10s linear infinite, pulse__darkred 1s linear infinite;
+}
+
+.lightgreen_planet {
+    width: 76px;
+    height: 76px;
+    background: url(../img/projects/lightgreen_planet.png) center no-repeat;
+    animation: circle_small 11s linear infinite, pulse__lightgreen 1s linear infinite;
+}
+
+@keyframes circle_big {
+    0% {
+        transform: rotate(0deg) translate(-350px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-350px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes pulse_green {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+    }
+}
+
+
+@keyframes pulse_green {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+        box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+        box-shadow: 0 0 0 0 rgba(130, 179, 255, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+        box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+    }
+}
+
+@-webkit-keyframes pulse__blue {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+    }
+}
+
+
+@keyframes pulse__blue {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+        box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+        box-shadow: 0 0 0 0 rgba(130, 139, 255, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+        box-shadow: 0 0 0 10px rgba(130, 179, 255, 0);
+    }
+}
+
+
+@keyframes circle_medium {
+    0% {
+        transform: rotate(0deg) translate(-240px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-240px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes pulse_red {
+    0% {
+        -webkit-box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+    }
+}
+
+@keyframes pulse_red {
+    0% {
+        -moz-box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+        box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+        box-shadow: 0 0 0 rgba(255, 0, 76, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+        box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+
+    }
+}
+
+@-webkit-keyframes pulse__darkred {
+    0% {
+        -webkit-box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+    }
+}
+
+
+@keyframes pulse__darkred {
+    0% {
+        -moz-box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+        box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+        box-shadow: 0 0 0 rgba(131, 18, 36, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+        box-shadow: 0 0 0 10px rgba(255, 0, 76, 0);
+
+    }
+}
+
+
+@keyframes circle_small {
+    0% {
+        transform: rotate(0deg) translate(-130px) rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-130px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes yellow_planet {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+    }
+}
+
+
+@keyframes yellow_planet {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+        box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+        box-shadow: 0 0 0 0 rgba(255, 179, 0, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+        box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+    }
+}
+
+@-webkit-keyframes pulse__lightgreen {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(136, 179, 075, 1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 0 rgba(136, 179, 75, 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+    }
+}
+
+
+@keyframes pulse__lightgreen {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(136, 179, 75, 1);
+        box-shadow: 0 0 0 0 rgba(136, 179, 075, 1);
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 0 0 rgba(136, 179, 75, 1);
+        box-shadow: 0 0 0 0 rgba(136, 179, 75, 1);
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+        box-shadow: 0 0 0 10px rgba(255, 179, 0, 0);
+    }
+}
+
+@media screen and (max-width: 1084px) {
+
+    /* size for tablet (devices_ */
+    .container_big_planet {
+        width: 571px;
+        height: 571px;
+        right: -285px;
+        top: 120px;
+    }
+
+    .green__planet {
+        width: 82px;
+        height: 82px;
+    }
+
+    .blue__planet {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container_mediaum_planet {
+        width: 392px;
+        height: 392px;
+    }
+
+    .red__planet {
+        width: 76px;
+        height: 76px;
+    }
+
+    .darkred_planet {
+        width: 60px;
+        height: 60px;
+    }
+
+    .container_small_planet {
+        width: 213px;
+        height: 213px;
+    }
+
+    .yellow_planet {
+        width: 56px;
+        height: 56px;
+    }
+
+    .lightgreen_planet {
+        width: 48px;
+        height: 48px;
+    }
+
+    @keyframes circle_big {
+        0% {
+            transform: rotate(0deg) translate(-288px) rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg) translate(-288px) rotate(-360deg);
+        }
+    }
+
+    @keyframes circle_medium {
+        0% {
+            transform: rotate(0deg) translate(-196px) rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg) translate(-196px) rotate(-360deg);
+        }
+    }
+
+    @keyframes circle_small {
+        0% {
+            transform: rotate(0deg) translate(-107px) rotate(0deg);
+
+        }
+
+        100% {
+            transform: rotate(360deg) translate(-107px) rotate(-360deg);
+        }
+    }
+}

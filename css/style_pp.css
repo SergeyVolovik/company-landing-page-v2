@@ -1,0 +1,209 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    background: url(../img/privacy_policy/background_body.png) no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #6c7279;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* header
+===================*/
+#header {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 37px 0 0 0;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.logo__text {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.logo__text a {
+    text-decoration: none;
+    color: #666666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* container
+===================*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    height: calc(var(--vh, 1vh) * 100);
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro__container h1 {
+    margin-bottom: 20px;
+    font-size: 4.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666666;
+    letter-spacing: 2px;
+}
+
+.container__text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text__intro {
+    width: 100%;
+    max-width: 696px;
+    font-size: 1em;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666666;
+    letter-spacing: .6px;
+}
+
+.container__img {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.planets {
+    width: 100%;
+    max-width: 483px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer
+===================*/
+#footer {
+    width: 100%;
+}
+
+.footer__block {
+    width: 365px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* social
+===================*/
+.social {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.social--footer {
+    justify-content: center;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    fill: #666666;
+    transition: fill .1s linear;
+}
+
+.social__item {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-right: 16.5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    outline: none;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__item:active,
+.social__item:focus,
+.social__item:hover {
+    outline: none !important;
+    touch-action: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.copyright__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}

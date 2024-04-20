@@ -1,0 +1,238 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999;
+}
+
+#status {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 9999;
+}
+
+.planet {
+    width: 60px;
+    height: 60px;
+    margin: 0 11px;
+}
+
+.yellow_planet_load {
+    background: url(../img/yellow_planet_unfill.png) center no-repeat;
+    animation: yellow__planet 1.5s ease infinite;
+    -webkit-animation: yellow__planet 1.5s ease infinite;
+}
+
+.green_planet_load {
+    background: url(../img/green_planet_unfill.png) center no-repeat;
+    animation: green_planet 1.5s ease infinite;
+    -webkit-animation: green_planet 1.5s ease infinite;
+}
+
+.red_planet_load {
+    background: url(../img/red_planet_unfill.png) center no-repeat;
+    animation: red_planet 1.5s ease infinite;
+    -webkit-animation: red_planet 1.5s ease infinite;
+}
+
+@keyframes yellow__planet {
+    0% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    25% {
+        transform: translateY(-50px);
+        background: url(../img/yellow_planet_fill.png) center no-repeat;
+        animation-timing-function: linear;
+    }
+
+    50% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    75% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+}
+
+@-webkit-keyframes yellow__planet {
+    0% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    25% {
+        transform: translateY(-50px);
+        background: url(../img/yellow_planet_fill.png) center no-repeat;
+        -webkit-animation-timing-function: linear;
+    }
+
+    50% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    75% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/yellow_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+}
+
+@keyframes green_planet {
+    0% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    25% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        background: url(../img/green_planet_fill.png) center no-repeat;
+        animation-timing-function: linear;
+    }
+
+    75% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+}
+
+@-webkit-keyframes green_planet {
+    0% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    25% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        background: url(../img/green_planet_fill.png) center no-repeat;
+        -webkit-animation-timing-function: linear;
+    }
+
+    75% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/green_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+}
+
+@keyframes red_planet {
+    0% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    25% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+
+    75% {
+        transform: translateY(-50px);
+        background: url(../img/red_planet_fill.png) center no-repeat;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        animation-timing-function: linear;
+    }
+}
+
+@-webkit-keyframes red_planet {
+    0% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    25% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    50% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+
+    75% {
+        transform: translateY(-50px);
+        background: url(../img/red_planet_fill.png) center no-repeat;
+        -webkit-animation-timing-function: linear;
+    }
+
+    100% {
+        background: url(../img/red_planet_unfill.png) center no-repeat;
+        transform: translate(0, 0);
+        -webkit-animation-timing-function: linear;
+    }
+}

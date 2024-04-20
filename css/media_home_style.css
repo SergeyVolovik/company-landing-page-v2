@@ -1,0 +1,325 @@
+@media (min-width: 1920px) and (max-width: 2560px) {
+    /* header */
+    .intro__inner {
+        max-width: none;
+    }
+
+    .intro__text {
+        max-width: 800px;
+    }
+
+    .intro__text h1 {
+        line-height: 130px;
+    }
+
+    .heading-modification {
+        font-size: 120px;
+    }
+
+    .intro__text h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .container__inner {
+        max-width: 1920px;
+    }
+
+    .intro__planets {
+        height: 170%;
+    }
+
+    /* overview */
+    .overview__inner {
+        max-width: 1200px;
+    }
+
+    .map__img {
+        right: 13%;
+    }
+
+    .markers svg {
+        width: 768px;
+    }
+
+    .lg-device {
+        max-width: 1200px;
+    }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+    .container__inner {
+        max-width: 1500px;
+    }
+
+    .intro__inner {
+        max-width: none;
+    }
+
+    .lg-device {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+    .lg-device {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    /* testimonials */
+    .slick-prev {
+        display: none !important;
+    }
+
+    .slick-next {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .cookie__container img {
+        margin: 0 0 10px 0;
+    }
+
+    #cookie__consent a.cookie__confirm {
+        margin: 20px 0 15px 0;
+    }
+}
+
+@media screen and (max-width: 1011px) {
+    /* header */
+    .heading-modification {
+        font-size: 65px;
+    }
+
+    .intro__text h1 {
+        line-height: 79px;
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .intro__planets{
+        height: 210%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* navigation */
+    .burger-mod {
+        padding: 13px 25px;
+    }
+
+    /* header */
+    .container__inner {
+        padding: 0 50px;
+    }
+
+    .intro {
+        margin-bottom: 0;
+        margin-top: 150px;
+        height: auto;
+    }
+
+    .intro__text {
+        width: 64.999%;
+    }
+
+    .intro__text h1 {
+        margin-bottom: 35px;
+    }
+
+    .intro__text h2 {
+        padding-right: 16px;
+        line-height: 28px;
+    }
+
+    .intro__planets {
+        height: 121%;
+        top: -25%;
+    }
+
+    .btn {
+        margin-top: 200px;
+    }
+
+    /* overview */
+    .overview {
+        margin-top: 150px;
+    }
+
+    .map__img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .markers {
+        width: 70%;
+    }
+
+    .pulse-svg {
+        width: 100%;
+    }
+
+    /* services */
+    .services {
+        margin-top: 250px;
+    }
+
+    .slick-slide {
+        width: 50vw;
+    }
+
+    .services__item {
+        width: 100% !important;
+    }
+
+    .playpause {
+        display: none !important;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    /* btn-modification */
+    .btn-modification {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    /* intro */
+    .intro__text {
+        width: 100%;
+    }
+
+    .intro__planets{
+        display: none;
+    }
+
+    .btn{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .heading-modification {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .cookie__container img {
+        margin: 0 0 10px 0;
+    }
+
+    #cookie__consent a.cookie__confirm {
+        margin: 20px 0 15px 0;
+    }
+
+    .main-header-modification {
+        margin-bottom: 83px;
+    }
+
+    .container__inner {
+        padding: 0 25px;
+    }
+
+    .intro {
+        margin-top: 0;
+    }
+
+    /* header */
+    .intro__text {
+        width: 100%;
+    }
+
+    .intro__text h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .btn {
+        margin-top: 108px;
+    }
+
+    /* overview */
+    .overview__text p {
+        text-align: left;
+    }
+
+    .overview__statistic {
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .item__statistic {
+        width: 50%;
+        padding: 0 40px;
+        margin: 10px 0;
+    }
+
+    .map__img {
+        right: 24%;
+    }
+
+    .markers {
+        width: 100%;
+    }
+
+    /* services */
+    .services {
+        margin-top: 180px;
+    }
+
+    /* btn-modification */
+    .btn-modification {
+        margin-top: 30px;
+    }
+
+    .slick-list {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heading-modification {
+        font-size: 42px;
+    }
+
+    .intro__text h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container__inner {
+        padding: 0px 23px;
+    }
+
+    .playpause {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .heading-modification {
+        font-size: 36px;
+    }
+
+    /* header */
+    .intro__text h1 {
+        font-size: 36px;
+    }
+
+    /* testimonials */
+    .playpause {
+        display: none;
+    }
+}
